@@ -12,11 +12,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  release:
+  merge:
     runs-on: ubuntu-latest
     steps:
       - uses: haya14busa/action-bumpr@v1.0.0
       - name: bumpr - Bump version when merging Pull Request with specific labels
+      - uses: haya14busa/action-bumpr@v1
 
 #  build:
 #     # The type of runner that the job will run on
